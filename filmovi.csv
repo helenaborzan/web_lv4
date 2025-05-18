@@ -1,0 +1,24 @@
+title,year,genres,duration,rating,directors,country,total_votes
+Inception,2010,"Action;Sci-Fi",148,8.8,"Christopher Nolan","United States",200
+The Matrix,1999,"Action;Sci-Fi",136,8.7,"Lana Wachowski;Lilly Wachowski","United States",300
+The Godfather,1972,"Crime;Drama",175,9.2,"Francis Ford Coppola","United States",400
+Pulp Fiction,1994,"Crime;Drama",154,8.9,"Quentin Tarantino","United States",100
+The Dark Knight,2008,"Action;Crime;Drama",152,9.0,"Christopher Nolan","United States",500
+Fight Club,1999,"Drama",139,8.8,"David Fincher","United States",600
+Forrest Gump,1994,"Drama;Romance",142,8.8,"Robert Zemeckis","United States",400
+Interstellar,2014,"Adventure;Drama;Sci-Fi",169,8.6,"Christopher Nolan","United States",200
+The Shawshank Redemption,1994,"Drama",142,9.3,"Frank Darabont","United States",100
+The Fellowship of the Ring,2001,"Adventure;Drama;Fantasy",178,8.8,"Peter Jackson","New Zealand",700
+The Two Towers,2002,"Adventure;Drama;Fantasy",179,8.7,"Peter Jackson","New Zealand",200
+The Return of the King,2003,"Adventure;Drama;Fantasy",201,9.0,"Peter Jackson","New Zealand",800
+The Social Network,2010,"Biography;Drama",120,7.7,"David Fincher","United States",700
+Gladiator,2000,"Action;Adventure;Drama",155,8.5,"Ridley Scott","United States",100
+Whiplash,2014,"Drama;Music",106,8.5,"Damien Chazelle","United States",400
+The Prestige,2006,"Drama;Mystery;Sci-Fi",130,8.5,"Christopher Nolan","United Kingdom",200
+Joker,2019,"Crime;Drama;Thriller",122,8.4,"Todd Phillips","United States",600
+Parasite,2019,"Comedy;Drama;Thriller",132,8.6,"Bong Joon Ho","South Korea",300
+The Green Mile,1999,"Crime;Drama;Fantasy",189,8.6,"Frank Darabont","United States",700
+Schindler's List,1993,"Biography;Drama;History",195,9.0,"Steven Spielberg","United States",500
+The Departed,2006,"Crime;Drama;Thriller",151,8.5,"Martin Scorsese","United States",400
+La Vita è Bella,1997,"Comedy;Drama;War",116,8.6,"Roberto Benigni","Italy",300
+

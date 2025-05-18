@@ -1,0 +1,179 @@
+/* Opći stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    color: blue;
+  }
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav{
+    text-align: left;
+}
+
+nav h2{
+    margin-bottom: 0; 
+
+}
+
+nav ul {
+    display: none;                  
+    background-color: #333;         
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: absolute;            
+    z-index: 100;
+    min-width: 180px;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main{
+    margin: 50px;
+}
+
+.opis-grafikona {
+    max-width: 800px;
+    margin: 30px auto 10px;
+    background-color: white;
+    padding: 20px;
+    border-left: 6px solid #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .opis-grafikona h2 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+
+:root {
+    /* Boje za žanrove */
+    --boja-animacija: #ffcc00;
+    --boja-drama: #ff6666;
+    --boja-komedija: #66ccff;
+    --boja-akcija: #66ff66;
+    --boja-ostalo: #999999;
+  
+    /* Dimenzije */
+    --velicina-grafikona: 250px;
+    --sirina-prstena: 60px;
+  }
+
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .pie-chart {
+    width: var(--velicina-grafikona);
+    height: var(--velicina-grafikona);
+    border-radius: 50%;
+    background: conic-gradient(
+      var(--boja-drama) 0% 35%,
+      var(--boja-komedija) 35% 60%,
+      var(--boja-akcija) 60% 75%,
+      var(--boja-animacija) 75% 80%,
+      var(--boja-ostalo) 80% 100%
+    );
+    position: relative;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .pie-chart:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .pie-chart::after {
+    content: "";
+    position: absolute;
+    top: var(--sirina-prstena);
+    left: var(--sirina-prstena);
+    width: calc(100% - 2 * var(--sirina-prstena));
+    height: calc(100% - 2 * var(--sirina-prstena));
+    background: white;
+    border-radius: 50%;
+  }
+  
+  .legend {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .legend li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .animacija { background-color: var(--boja-animacija); }
+  .drama     { background-color: var(--boja-drama); }
+  .komedija  { background-color: var(--boja-komedija); }
+  .akcija    { background-color: var(--boja-akcija); }
+  .ostalo    { background-color: var(--boja-ostalo); }
+  

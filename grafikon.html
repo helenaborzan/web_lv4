@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafikon žanrova filmova</title>
+  <link rel="stylesheet" href="grafikon_style.css">
+</head>
+<body>
+  <nav aria-labelledby="prosirena-navigacija">
+			<h2 id="prosirena-navigacija">Navigacija</h2> <!-- dodati obilježja za ARIA-->
+			<ul>				
+				<li><a href="index.html">Pocetna</a></li>
+				<li><a href="grafikon.html">Grafikon</a></li>
+				<li><a href="/slike">Slike</a></li>
+			</ul>
+		</nav>
+  <h1>Grafikon žanrova filmova</h1>
+  <article class="opis-grafikona">
+    <h2>O grafu</h2>
+    <p>
+      Ovaj grafikon prikazuje raspodjelu žanrova filmova prema podacima iz dostupne filmske baze. 
+      Na temelju analiziranih filmova, drama i komedija su među najzastupljenijim žanrovima, dok akcija i animacija imaju manji udio. 
+      Ostali žanrovi uključuju horor, triler, dokumentarne i avanturističke filmove. 
+      Vizualni prikaz omogućava lakše razumijevanje popularnosti pojedinih žanrova.
+    </p>
+  </article>
+  <main class="chart-container">
+    <section class="pie-chart"></section>
+    <ul class="legend">
+      <li><span class="color animacija"></span> Animacija</li>
+      <li><span class="color drama"></span> Drama</li>
+      <li><span class="color komedija"></span> Komedija</li>
+      <li><span class="color akcija"></span> Akcija</li>
+      <li><span class="color ostalo"></span> Ostalo</li>
+    </ul>
+  </main>
+</body>
+</html>

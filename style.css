@@ -1,0 +1,351 @@
+/* Opći stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header i navigacija */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav{
+    text-align: left;
+}
+
+nav h2{
+    margin-bottom: 0; 
+
+}
+
+nav ul {
+    display: none;                  
+    background-color: #333;         
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: absolute;            
+    z-index: 100;
+    min-width: 180px;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+/* Sekcije */
+.content {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox za podatke */
+.data-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Kružni grafikon - CSS samo */
+.pie-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #3498db 0% 40%,  /* Industrija */
+        #2ecc71 40% 75%,  /* Kućanstva */
+        #f1c40f 75% 100%  /* Transport */
+    );
+    margin: 0 auto;
+}
+
+/* Flexbox analiza sekcija */
+.analysis-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* wrap */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.analysis-box {
+    background: #e3e3e3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+/* Flexbox za kontakt formu */
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input, button {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 50px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  aside{
+    margin: 50px;
+  }
+
+/* Responzivnost */
+@media (max-width: 768px) {
+    .data-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .analysis-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-flex input, .form-flex button {
+        width: 100%;
+    }
+
+    .flex-container{
+        display: block;
+    }
+}
+
+@keyframes imageEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+aside img {
+  animation: imageEntrance 1.5s ease-out forwards;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+#kosarica {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 250px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#kosarica ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#kosarica button {
+    margin-top: 10px;
+}
+
+#filteri {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#filteri select,
+#filteri input[type="number"],
+#filteri input[type="range"],
+#filteri button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#filteri span {
+    align-self: center;
+    font-weight: bold;
+}
+
+#toggle-kosarica {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+  
+#toggle-kosarica:hover {
+    color: #3498db;
+}
+
+#kosarica {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #3498db;
+}
+
+#kosarica-sadrzaj {
+    padding: 10px 0;
+}
+
+#lista-kosarice {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+#lista-kosarice li {
+    padding: 8px 5px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#potvrdi-kosaricu {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#potvrdi-kosaricu:hover {
+    background-color: #2980b9;
+}
+
